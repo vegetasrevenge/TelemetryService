@@ -7,6 +7,25 @@ public class ClassHTMLTemplate {
                     "\n" +
                     "    <meta charset=\"utf-8\">\n" +
                     "    <title>Vehicle Telemetry</title>\n" +
+                    "    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans\" rel=\"stylesheet\">\n" +
+                    "    <style>\n" +
+                    "\n" +
+                    "    body {\n" +
+                    "    display: flex;\n" +
+                    "    flex-flow: row;\n" +
+                    "    font-family: 'Open Sans', sans-serif;\n" +
+                    "    background-color: grey;\n" +
+                    "\n" +
+                    "    }\n" +
+                    "\n" +
+                    "    table {\n" +
+                    "    text-align: center;\n" +
+                    "    margin: 0 auto;\n" +
+                    "    background-color: black;\n" +
+                    "    color: white;\n" +
+                    "    }\n" +
+                    "</style>\n" +
+                    "\n" +
                     "</head>\n" +
                     "<body>\n" +
                     "\n" +
