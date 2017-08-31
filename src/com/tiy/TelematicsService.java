@@ -104,10 +104,28 @@ public class TelematicsService {
 
         output += ClassHTMLTemplate.header;
 
-        output += ClassHTMLTemplate.avgRow;
 
-        output += ClassHTMLTemplate.currentRow;
+        //Fills in average vehicle table rows
+        String averageRow = ClassHTMLTemplate.avgRow;
 
+        averageRow = averageRow.replace("avgOdometer", vehicleAverages.get(0).toString());
+        averageRow = averageRow.replace("avgGas", vehicleAverages.get(1).toString());
+        averageRow = averageRow.replace("avgOil", vehicleAverages.get(2).toString());
+        averageRow = averageRow.replace("avgEngine", vehicleAverages.get(3).toString());
+        output += averageRow;
+
+        //Fills in current vehicle table rows
+
+
+        for (VehicleInfo vehicle: vehicleList) {
+            String currentRow = ClassHTMLTemplate.currentRow;
+            currentRow = currentRow.replace("vin", vehicle.getVin());
+            currentRow = currentRow.replace("odometer", vehicle.getOdometer().toString());
+            currentRow = currentRow.replace("gas", vehicle.getGalGasConsumed().toString());
+            currentRow = currentRow.replace("oil", vehicle.getLastOilOdometer().toString());
+            currentRow = currentRow.replace("engine", vehicle.getEngineSize().toString());
+            output += currentRow;
+        }
         output += ClassHTMLTemplate.footer;
 
         try {

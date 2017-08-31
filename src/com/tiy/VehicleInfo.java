@@ -2,10 +2,10 @@ package com.tiy;
 
 public class VehicleInfo {
     private String vin;
-    private double odometer;
-    private double galGasConsumed;
-    private double lastOilOdometer;
-    private double engineSize;
+    private Double odometer;
+    private Double galGasConsumed;
+    private Double lastOilOdometer;
+    private Double engineSize;
 
     public VehicleInfo() {
     }
@@ -18,35 +18,35 @@ public class VehicleInfo {
         this.vin = vin;
     }
 
-    public double getOdometer() {
+    public Double getOdometer() {
         return odometer;
     }
 
-    public void setOdometer(double odometer) {
+    public void setOdometer(Double odometer) {
         this.odometer = odometer;
     }
 
-    public double getGalGasConsumed() {
+    public Double getGalGasConsumed() {
         return galGasConsumed;
     }
 
-    public void setGalGasConsumed(double galGasConsumed) {
+    public void setGalGasConsumed(Double galGasConsumed) {
         this.galGasConsumed = galGasConsumed;
     }
 
-    public double getLastOilOdometer() {
+    public Double getLastOilOdometer() {
         return lastOilOdometer;
     }
 
-    public void setLastOilOdometer(double lastOilOdometer) {
+    public void setLastOilOdometer(Double lastOilOdometer) {
         this.lastOilOdometer = lastOilOdometer;
     }
 
-    public double getEngineSize() {
+    public Double getEngineSize() {
         return engineSize;
     }
 
-    public void setEngineSize(double engineSize) {
+    public void setEngineSize(Double engineSize) {
         this.engineSize = engineSize;
     }
 }

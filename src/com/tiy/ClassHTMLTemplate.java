@@ -21,7 +21,7 @@ public class ClassHTMLTemplate {
 
     public static final String avgRow =
             "<tr>\n" +
-                    "        <td>avgVin</td>\n" +
+                    "        <td>N/A</td>\n" +
                     "        <td>avgOdometer</td>\n" +
                     "        <td>avgGas</td>\n" +
                     "        <td>avgOil</td>\n" +
